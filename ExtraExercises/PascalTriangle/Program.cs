@@ -66,14 +66,11 @@ namespace PascalTriangle
             {
                 return 0;
             }
-            else
+            for (int c = 1; c <= n; c++)
             {
-                for (int c = 1; c <= n; c++)
-                {
-                    fact = fact * c;
-                }
-                return fact;
+                fact = fact * c;
             }
+            return fact;
         }
     }
 }
